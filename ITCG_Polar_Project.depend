@@ -1,0 +1,113 @@
+# depslib dependency file v1.0
+1500543724 source:/Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/AWGN_Channel.cpp
+	"AWGN_Channel.h"
+
+1500543730 /Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/AWGN_Channel.h
+	"CommonFunc.h"
+
+1500456932 /Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/CommonFunc.h
+	<cstdio>
+	<cmath>
+	<fstream>
+	<cstring>
+	<algorithm>
+	<iostream>
+	<time.h>
+	<complex>
+	<vector>
+	<queue>
+	<map>
+	<stack>
+	<set>
+
+1490596315 source:/Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/BPSK_Modulater.cpp
+	"BPSK_Modulater.h"
+
+1490596315 /Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/BPSK_Modulater.h
+	"CommonFunc.h"
+
+1500456938 source:/Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/CommonFunc.cpp
+	"CommonFunc.h"
+
+1500544423 source:/Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/PolarCodec.cpp
+	"PolarCodec.h"
+
+1500542771 /Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/PolarCodec.h
+	"CommonFunc.h"
+
+1500543919 source:/Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/Simulator.cpp
+	"Simulator.h"
+
+1500542900 /Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/Simulator.h
+	"CommonFunc.h"
+	"SourceCreate.h"
+	"PolarCodec.h"
+	"BPSK_Modulater.h"
+	"AWGN_Channel.h"
+
+1492225708 /Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/SourceCreate.h
+	"CommonFunc.h"
+
+1500388559 source:/Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/SourceCreate.cpp
+	"SourceCreate.h"
+
+1492226191 source:/Volumes/BOOTCAMP/Codes/MAC/ITCG_Polar_Project/main.cpp
+	"CommonFunc.h"
+	"Simulator.h"
+
+1490596315 source:/Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/BPSK_Modulater.cpp
+	"BPSK_Modulater.h"
+
+1490596315 /Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/BPSK_Modulater.h
+	"CommonFunc.h"
+
+1500456932 /Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/CommonFunc.h
+	<cstdio>
+	<cmath>
+	<fstream>
+	<cstring>
+	<algorithm>
+	<iostream>
+	<time.h>
+	<complex>
+	<vector>
+	<queue>
+	<map>
+	<stack>
+	<set>
+
+1500388559 source:/Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/SourceCreate.cpp
+	"SourceCreate.h"
+
+1492225708 /Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/SourceCreate.h
+	"CommonFunc.h"
+
+1500543724 source:/Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/AWGN_Channel.cpp
+	"AWGN_Channel.h"
+
+1500543730 /Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/AWGN_Channel.h
+	"CommonFunc.h"
+
+1500456938 source:/Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/CommonFunc.cpp
+	"CommonFunc.h"
+
+1515486686 source:/Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/main.cpp
+	"CommonFunc.h"
+	"Simulator.h"
+
+1500542900 /Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/Simulator.h
+	"CommonFunc.h"
+	"SourceCreate.h"
+	"PolarCodec.h"
+	"BPSK_Modulater.h"
+	"AWGN_Channel.h"
+
+1500542771 /Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/PolarCodec.h
+	"CommonFunc.h"
+
+1512110519 source:/Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/PolarCodec.cpp
+	"PolarCodec.h"
+
+1500543919 source:/Users/ZLM/Documents/Codes/GitHub/ITCG_Polar_BP_BPSK_AWGN/Simulator.cpp
+	"Simulator.h"
+
