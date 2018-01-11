@@ -129,7 +129,7 @@ inline void CCodec::Pallel_BP_Update_LLR() {
 }
 
 inline void CCodec::Pallel_BP_Update_InfoMap() {
-    for(int i = 1; i < m_Layer_num - 1; ++i) {
+    for(int i = 1; i < m_Layer_num; ++i) {
         int tmp = 1 << (i - 1);
         for(int j = 0; j < m_codeword_len; ++j)  {
             if(j & tmp) m_Info_eti[i][j] = m_Info_eti[i - 1][j] + Tian(m_Info_eti[i - 1][j ^ tmp], m_LLR[i][j ^ tmp]);

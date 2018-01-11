@@ -1,8 +1,6 @@
 
 *.layout
 
-*.cbp
-
 *.depend
 
 bin/Debug/ITCG_Polar_Project
