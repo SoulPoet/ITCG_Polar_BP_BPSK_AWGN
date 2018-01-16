@@ -34,8 +34,8 @@
 		</Compiler>
 		<Unit filename="AWGN_Channel.cpp" />
 		<Unit filename="AWGN_Channel.h" />
-		<Unit filename="BPSK_Modulater.cpp" />
-		<Unit filename="BPSK_Modulater.h" />
+		<Unit filename="BPSK_Modulator.cpp" />
+		<Unit filename="BPSK_Modulator.h" />
 		<Unit filename="CommonFunc.cpp" />
 		<Unit filename="CommonFunc.h" />
 		<Unit filename="PolarCodec.cpp" />
