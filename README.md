@@ -1,7 +1,7 @@
 # ITCG_Polar_BP_BPSK_AWGN Simulator
 
 ## Simulator.ini File
+The configuration file of simulator.
+## channel.ini
 
-## Channel.ini
-
-## Encoder.ini
+## encoder.ini
