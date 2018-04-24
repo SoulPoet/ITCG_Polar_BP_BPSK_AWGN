@@ -8,3 +8,7 @@ bin/Debug/ITCG_Polar_Project
 *.o
 
 *.cbp
+
+ITCG_Polar_Project
+
+*.txt
