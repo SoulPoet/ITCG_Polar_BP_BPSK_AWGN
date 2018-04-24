@@ -1,4 +1,4 @@
-#include "Simulator.h"
+#include "Simulator.hpp"
 
 Simulator::Simulator() {
 
@@ -50,7 +50,7 @@ void Simulator::Init(const char *config_file_path) {
     m_receive_signal = new double[m_blk_len];
     m_restore_codeword = new int[m_blk_len];
     m_restore_signal = new int[m_bit_num];
-    
+
     m_out_file = OpenFile(output_file_path, "w");
 
 }
@@ -68,7 +68,7 @@ void Simulator::Start() {
             Modulater::Modulate(m_encoded_signal, m_send_signal, m_blk_len);
             m_chn1.transmit(m_send_signal, m_receive_signal, m_blk_len);
             m_enc1.Pallel_BP_Decoder4BPSK_AWGN(m_receive_signal, m_restore_signal, m_chn1.m_segma);
-            
+
             for(int j = 0; j < m_bit_num; ++j)
                 if(m_source_signal[j] != m_restore_signal[j])
                     ++m_err_bit_cnt;

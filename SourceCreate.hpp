@@ -1,4 +1,4 @@
-#include "CommonFunc.h"
+#include "CommonFunc.hpp"
 
 #ifndef _ITCG_SOURCE_CREATE_
 	#define _ITCG_SOURCE_CREATE_

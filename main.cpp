@@ -1,5 +1,5 @@
-#include "CommonFunc.h"
-#include "Simulator.h"
+#include "CommonFunc.hpp"
+#include "Simulator.hpp"
 
 int main() {
     Simulator s;

@@ -1,4 +1,4 @@
-#include "CommonFunc.h"
+#include "CommonFunc.hpp"
 
 #ifndef _ITCG_POLAR_CODEC_
 	#define _ITCG_POLAR_CODEC_
@@ -14,10 +14,10 @@
 			return x.metric > y.metric;
 		}
 	};
-	
+
 	class CCodec{
 	public:
-		
+
 		double **m_LLR;
 		double **m_Info_eti;
 		int **m_Layer_info;

@@ -1,4 +1,4 @@
-#include "CommonFunc.h"
+#include "CommonFunc.hpp"
 
 const int A = 48271;
 const long M = 2147483647;
@@ -89,7 +89,7 @@ void Normal(double *arr, int len) {
         }
 
         w = sqrt(-2.0 * log(w) / w);
-    
+
         arr[2 * t] = x1 * w;
         arr[2 * t + 1] = x2 * w;
     }

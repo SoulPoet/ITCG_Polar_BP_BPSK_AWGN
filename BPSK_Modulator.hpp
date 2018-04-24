@@ -1,4 +1,4 @@
-#include "CommonFunc.h"
+#include "CommonFunc.hpp"
 
 #ifndef _ITCG_BPSK_Modulater_
     #define _ITCG_BPSK_Modulater_

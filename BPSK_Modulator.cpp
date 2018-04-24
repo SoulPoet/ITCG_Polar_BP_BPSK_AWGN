@@ -1,4 +1,4 @@
-#include "BPSK_Modulater.h"
+#include "BPSK_Modulator.hpp"
 
 Modulater::Modulater() {
 

@@ -1,8 +1,8 @@
-#include "CommonFunc.h"
-#include "SourceCreate.h"
-#include "PolarCodec.h"
-#include "BPSK_Modulater.h"
-#include "AWGN_Channel.h"
+#include "CommonFunc.hpp"
+#include "SourceCreate.hpp"
+#include "PolarCodec.hpp"
+#include "BPSK_Modulator.hpp"
+#include "AWGN_Channel.hpp"
 
 #ifndef _ITCG_Simulator_
 	#define _ITCG_Simulator_

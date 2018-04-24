@@ -1,4 +1,4 @@
-#include "CommonFunc.h"
+#include "CommonFunc.hpp"
 
 #ifndef _ITCG_AWGN_CHANNEL_
     #define _ITCG_AWGN_CHANNEL_

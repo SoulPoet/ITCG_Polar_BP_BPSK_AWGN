@@ -6,3 +6,5 @@
 bin/Debug/ITCG_Polar_Project
 
 *.o
+
+*.cbp
