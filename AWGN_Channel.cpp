@@ -1,4 +1,4 @@
-#include "AWGN_Channel.h"
+#include "AWGN_Channel.hpp"
 
 Channel::Channel() {
 
