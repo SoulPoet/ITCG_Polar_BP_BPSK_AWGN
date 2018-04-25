@@ -14,8 +14,10 @@ The configuration file of encoder and decoder.
 ## How To Use
 
 ### First Step
-Open the terminal and use "make" to generate updated executable file. Use "make clean" before "make" to rebuild this project.
+Open the terminal and use "make" to generate updated executable file.
 ### Second Step
 Check the parameters in the configuration files.
 ### Third Step
 Use "./ITCG_Polar_Project" to run this simulator.
+### PS
+Use "make clean" before "make" to rebuild this project.
