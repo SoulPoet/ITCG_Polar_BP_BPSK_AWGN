@@ -5,7 +5,7 @@ PROJECT = ITCG_Polar_Project
 $(PROJECT) : $(OBJECTS)
 	$(CC) $(OBJECTS) -o $@
 
-main.o : main.cpp
+main.o : main.cpp CommonFunc.hpp
 	$(CC) -c $< -o $@
 
 %.o : %.cpp %.hpp CommonFunc.hpp
