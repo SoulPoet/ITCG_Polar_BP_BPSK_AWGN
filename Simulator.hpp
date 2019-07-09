@@ -3,6 +3,7 @@
 #include "PolarCodec.hpp"
 #include "BPSK_Modulator.hpp"
 #include "AWGN_Channel.hpp"
+#include "Error_Counter.hpp"
 
 #ifndef _ITCG_Simulator_
 	#define _ITCG_Simulator_
@@ -14,14 +15,10 @@
 	    double m_snr_step;
 	    double m_snr;
 
-
-		int m_blk_num;
+	    int m_bit_num;
 		int m_blk_len;
-		int m_bit_num;
-		int m_err_blk_cnt;
-		int m_err_bit_cnt;
-		int m_tot_blk;
-		int m_tot_bit;
+		int m_max_blk_num;
+		int m_max_err_blk;
 		double m_fer;
 		double m_ber;
 
@@ -34,7 +31,7 @@
 		FILE *m_out_file;
 		CCodec m_enc1;
 		Channel m_chn1;
-
+		C_Error_Counter m_cnt1;
 
 		Simulator();
 		~Simulator();
@@ -47,7 +44,7 @@
 		void DisplayReceiveSignal();
 		void DisplayRestoreCodeword();
 		void DisplayRestoreSignal();
-		void DisplayResult();
+		void DisplayResult(FILE *out = NULL);
 	};
 
 #endif

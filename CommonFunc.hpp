@@ -31,8 +31,8 @@ using namespace std;
 	int SGN(const double x);
 	FILE* OpenFile(const char *file_path, const char *mode);
 	double CntSNR(double sigal_power, double noise_power);
-	void Debug(char *var_name, int val);
-	void Debug(char *var_name, double val);
-	void Debug(char *var_name, char *str);
+	void Debug(const char *var_name, int val);
+	void Debug(const char *var_name, double val);
+	void Debug(const char *var_name, char *str);
 
 #endif

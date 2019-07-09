@@ -1,12 +1,8 @@
 #include "AWGN_Channel.hpp"
 
-Channel::Channel() {
+Channel::Channel() {}
 
-}
-
-Channel::~Channel() {
-
-}
+Channel::~Channel() {}
 
 void Channel::Init(const char *config_file_path) {
     FILE *in_file = OpenFile(config_file_path, "r");

@@ -37,10 +37,10 @@
 		~CCodec();
 		void Init(const char *config_file_path);
 		void Hadamard_Encoder(int *in, int *out, int blk);
-		inline void Pallel_BP_Update_LLR();
-		inline void Pallel_BP_Update_InfoMap();
-		inline void Pallel_BP_Proc();
-		void Pallel_BP_Decoder4BPSK_AWGN(double *in, int *out, double segma);
+		inline void Parallel_BP_Update_LLR();
+		inline void Parallel_BP_Update_InfoMap();
+		inline void Parallel_BP_Proc();
+		void Parallel_BP_Decoder_4_BPSK_AWGN(double *in, int *out, double segma);
 		void Clean();
 		int CalcBlkNum(int bit_num);
 		inline double Tian(const double a, const double b);

@@ -1,5 +1,5 @@
 CC = g++
-OBJECTS = AWGN_Channel.o PolarCodec.o SourceCreate.o BPSK_Modulator.o CommonFunc.o Simulator.o main.o
+OBJECTS = AWGN_Channel.o PolarCodec.o Error_Counter.o SourceCreate.o BPSK_Modulator.o CommonFunc.o Simulator.o main.o
 PROJECT = ITCG_Polar_Project
 
 $(PROJECT) : $(OBJECTS)

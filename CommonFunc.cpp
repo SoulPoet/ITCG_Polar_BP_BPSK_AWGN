@@ -132,14 +132,14 @@ double CntSNR(double sigal_power, double noise_power) {
     return 10.0 * log10(sigal_power / noise_power);
 }
 
-void Debug(char *var_name, int val) {
+void Debug(const char *var_name, int val) {
     printf("\nDebug:%s=%d\n", var_name, val);
 }
 
-void Debug(char *var_name, double val) {
+void Debug(const char *var_name, double val) {
     printf("\nDebug:%s=%f\n", var_name, val);
 }
 
-void Debug(char *var_name, char *str) {
+void Debug(const char *var_name, char *str) {
     printf("\nDebug:%s=%s\n", var_name, str);
 }

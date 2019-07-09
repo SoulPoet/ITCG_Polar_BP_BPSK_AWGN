@@ -71,9 +71,8 @@ void CCodec::Init(const char *config_file_path) {
                 m_Layer_info[i] = new int[m_codeword_len];
             }
         }
-        else if(!strcmp(str, "message_blk_len")) {
+        else if(!strcmp(str, "message_blk_len"))
             fscanf(in_file, "%d", &m_message_blk_len);
-        }
         else if(!strcmp(str, "frozen_bits")) {
         	int tmp;
             for(int i = 0; i < m_codeword_len; ++i) {
@@ -97,8 +96,7 @@ void CCodec::Hadamard_Encoder(int *in, int *out, int blk) {
 	int in_idx = 0, out_idx = 0;
     while(blk--) {
         for(int i = 0; i < m_codeword_len; ++i)
-            if(!m_isFrozen[i])
-                m_Layer_info[0][i] = in[in_idx++];
+            m_Layer_info[0][i] = m_isFrozen[i] ? 0 : in[in_idx++];
         for(int i = 1; i < m_Layer_num; ++i) {
             int tmp = 1 << (i - 1);
             for(int j = 0; j < m_codeword_len; ++j) {
@@ -113,11 +111,10 @@ void CCodec::Hadamard_Encoder(int *in, int *out, int blk) {
 
 inline double CCodec::Tian(const double a, const double b) {
     double tmp = tanh(a / 2.0) * tanh(b / 2.0);
-    double rst = log((1.0 + tmp) / (1.0 - tmp));
-    return rst;
+    return log((1.0 + tmp) / (1.0 - tmp));
 }
 
-inline void CCodec::Pallel_BP_Update_LLR() {
+inline void CCodec::Parallel_BP_Update_LLR() {
     for(int i = m_Layer_num - 1; i; --i) {
         int tmp = 1 << (i - 1);
         for(int j = 0; j < m_codeword_len; ++j) {
@@ -128,7 +125,7 @@ inline void CCodec::Pallel_BP_Update_LLR() {
     }
 }
 
-inline void CCodec::Pallel_BP_Update_InfoMap() {
+inline void CCodec::Parallel_BP_Update_InfoMap() {
     for(int i = 1; i < m_Layer_num; ++i) {
         int tmp = 1 << (i - 1);
         for(int j = 0; j < m_codeword_len; ++j)  {
@@ -139,12 +136,12 @@ inline void CCodec::Pallel_BP_Update_InfoMap() {
     }
 }
 
-inline void CCodec::Pallel_BP_Proc() {
-    Pallel_BP_Update_LLR();
-    Pallel_BP_Update_InfoMap();
+inline void CCodec::Parallel_BP_Proc() {
+    Parallel_BP_Update_LLR();
+    Parallel_BP_Update_InfoMap();
 }
 
-void CCodec::Pallel_BP_Decoder4BPSK_AWGN(double *in, int *out, double segma) {
+void CCodec::Parallel_BP_Decoder_4_BPSK_AWGN(double *in, int *out, double segma) {
     double tmp = 2.0 / (segma * segma);
     for(int i = 0; i < m_codeword_len; ++i)
         if(m_isFrozen[i]) m_Info_eti[0][i] = LLR_INF;
@@ -159,7 +156,7 @@ void CCodec::Pallel_BP_Decoder4BPSK_AWGN(double *in, int *out, double segma) {
 
     int iter = 0;
     for(; iter < m_max_iter_num; ++iter)
-        Pallel_BP_Proc();
+        Parallel_BP_Proc();
     // double max_LLR = 0.0;
     // int max_LLR_idx = 0;
     // for(; iter < m_max_iter_num; ++iter) {
@@ -175,7 +172,7 @@ void CCodec::Pallel_BP_Decoder4BPSK_AWGN(double *in, int *out, double segma) {
     int out_idx = 0;
     for(int i = 0; i < m_codeword_len; ++i) {
         if(!m_isFrozen[i])
-            out[out_idx++] = (m_Info_eti[0][i] + m_LLR[0][i] >= 0) ? 0 : 1;
+            out[out_idx++] = (m_Info_eti[0][i] + m_LLR[0][i] > 0) ? 0 : 1;
     }
 }
 
