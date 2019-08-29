@@ -116,7 +116,7 @@ int HammingDistance(int *arr1, int *arr2, int len) {
 }
 
 int SGN(const double x) {
-    return (x > EPS) - (x < EPS);
+    return (x > EPS) - (x < -EPS);
 }
 
 FILE* OpenFile(const char *file_path, const char *mode) {
